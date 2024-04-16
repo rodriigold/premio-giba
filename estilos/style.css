@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+*
+{
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body
+{
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-image: url(../imagens/background.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#screen
+{
+    width: 595px;
+    height: 595px;
+    margin: 10px;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.one 
+{
+    background-image: url(../imagens/teste1.png);
+    opacity: 1;
+}
+
+.two 
+{
+    background-image: url(../imagens/teste2.png);
+    opacity: 0;
+}
+
+.tree 
+{
+    background-image: url(../imagens/teste3.png);
+    opacity: 0;
+}
+
+.four 
+{
+    background-image: url(../imagens/teste4.png);
+    opacity: 0;
+}
+
+.five 
+{
+    background-image: url(../imagens/teste5.png);
+    opacity: 0;
+}
+
+@keyframes fadeIn 
+{
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut 
+{
+    from { opacity: 1; }
+    to { opacity: 0; }
+}

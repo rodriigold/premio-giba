@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Encomenda</title>
+
+</head>
+<body>
+    
+    <div id="screen" class="one" onclick="changeImage()"></div>
+
+    <!-- ================================================================================ -->
+
+    <script>
+
+        function changeImage()
+        {
+            var div = document.getElementById('screen');
+
+            if(div.classList.contains('one'))
+            {
+                div.style.animation = 'fadeOut 0.5s forwards'; 
+                setTimeout(() =>
+                {
+                    div.classList.remove('one');
+                    setTimeout(() => 
+                    {
+                        div.classList.add('two');
+                        setTimeout(() => { div.style.animation = 'fadeIn 0.5s forwards'; }, 50);
+                    }, 50);
+                }, 500);
+            }
+            else if(div.classList.contains('two'))
+            {
+                div.style.animation = 'fadeOut 0.5s forwards'; 
+                setTimeout(() => 
+                {
+                    div.classList.remove('two');
+                    setTimeout(() => 
+                    {
+                        div.classList.add('tree');
+                        setTimeout(() => { div.style.animation = 'fadeIn 0.5s forwards'; }, 50);
+                    }, 50);
+                }, 500);
+            }
+            else if(div.classList.contains('tree'))
+            {
+                div.style.animation = 'fadeOut 0.5s forwards'; 
+                setTimeout(() => 
+                {
+                    div.classList.remove('tree');
+                    setTimeout(() => 
+                    {
+                        div.classList.add('four');
+                        setTimeout(() => { div.style.animation = 'fadeIn 0.5s forwards'; }, 50);
+                    }, 50);
+                }, 500);
+            }
+            else if(div.classList.contains('four'))
+            {
+                div.style.animation = 'fadeOut 0.5s forwards'; 
+                setTimeout(() => 
+                {
+                    div.classList.remove('four');
+                    setTimeout(() => 
+                    {
+                        div.classList.add('five');
+                        setTimeout(() => { div.style.animation = 'fadeIn 0.5s forwards'; }, 50);
+                    }, 50);
+                }, 500);
+            }
+        }
+
+    </script>
+
+</body>
+</html>
+
