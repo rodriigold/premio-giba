@@ -20,7 +20,7 @@ body
 {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 
     background-image: url(../imagens/background.jpg);
     background-position: center center;
@@ -44,31 +44,31 @@ body
 
 .one 
 {
-    background-image: url(../imagens/teste1.png);
+    background-image: url(../imagens/caixa-fechada.png);
     opacity: 1;
 }
 
 .two 
 {
-    background-image: url(../imagens/teste2.png);
+    background-image: url(../imagens/caixa-aberta.png);
     opacity: 0;
 }
 
 .tree 
 {
-    background-image: url(../imagens/teste3.png);
+    background-image: url(../imagens/premio.png);
     opacity: 0;
 }
 
 .four 
 {
-    background-image: url(../imagens/teste4.png);
+    background-image: url(../imagens/carta.png);
     opacity: 0;
 }
 
 .five 
 {
-    background-image: url(../imagens/teste5.png);
+    background-image: url(../imagens/fim.png);
     opacity: 0;
 }
 
